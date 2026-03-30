@@ -36,54 +36,126 @@ header {
     top: 0;
 }
 
-main{
+main {
     width: 80%;
     margin-left: 20% !important;
 }
 
 /* ==========Menu Lateral Esquerdo========== */
-nav{
+nav {
     width: 100%;
     display: block;
     padding: 0 10px !important;
 }
 
-nav .logo{
+nav .logo {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px !important;
     border-bottom: 1px solid #365d9ce0;
     margin-bottom: 10px;
 }
 
 
-nav .logo a img{
-    width: 200px;
-    height: 100px;
+nav .logo a img {
+    width: 210px;
+    height: 80px;
 }
 
-nav .form-group{
+nav .form-group {
     width: 100%;
     margin-top: 10px !important;
 }
 
-nav .form-group .rows{
+nav .form-group .rows {
     width: 100%;
     position: relative;
+    display: block;
 }
 
-nav .form-group .rows .form-control{
-    height: 40px;
+nav .form-group .rows .form-control {
+    height: 44px;
     box-shadow: none !important;
-    /* padding: 10px 10px 10px 20px !important; */
-
+    background: none !important;
+    padding-left: 34px !important;
+    color: #eeee !important;
+    margin-bottom: 14px 0 !important;
+    border-radius: 4px !important;
+    border: 1px solid #365d9ce0 !important;
+}
+nav .form-group .rows input::placeholder {
+    color: #eee !important;
+    font-size: 1rem;
 }
 
-.nav-top{
+nav .form-group .rows i{
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    color: #eee;
+    font-size: 0.8rem;
+}
+
+.nav-top {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px !important;
+    /* padding: 10px !important; */
+}
+
+.nav ul {
+    width: 100%, ;
+    list-style: none !important;
+    display: block;
+
+}
+
+nav ul li {
+    margin: 10px 0 !important;
+}
+
+nav ul li a{
+    display: flex;
+    padding: 12px !important;
+    text-decoration: none;
+    color: #eee;
+    font-family: "roboto";
+    border-radius: 4px;
+}
+
+nav ul li a i{
+    margin-right: 6px !important;
+}
+
+.actives,
+nav ul li a:hover {
+    background-color: #eee !important;
+    color: #000 !important;
+}
+nav ul li a.activer i{
+    color: #000;
+}
+nav ul li a:hover i{
+    color: #000 !important;
+}
+
+/* ==========nav top========== */
+
+.nav-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px !important; */
+}
+
+.nav-top .bars{
+    display: flex;
+}
+
+.nav-top .bars .btn{
+    background-color: #fff !important;
+    padding: 10px 12px !important;
+    margin: 10px;
 }
