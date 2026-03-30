@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/* Tirando todas as bordas e espaçamento interior para evitar conflito com a formatação do bootstrap */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Formatação da tag container-fluid para menu lateral direito e menu top */
+.container-fluid {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+}
+
+header {
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(#12366fbb, #12366fbb), url("../images/6a1f7f2b0d2627742952fc64591d95f3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main{
+    width: 80%;
+    margin-left: 20% !important;
+}
+
+/* ==========Menu Lateral Esquerdo========== */
+nav{
+    width: 100%;
+    display: block;
+    padding: 0 10px !important;
+}
+
+nav .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #365d9ce0;
+    margin-bottom: 10px;
+}
+
+
+nav .logo a img{
+    width: 200px;
+    height: 100px;
+}
+
+nav .form-group{
+    width: 100%;
+    margin-top: 10px !important;
+}
+
+nav .form-group .rows{
+    width: 100%;
+    position: relative;
+}
+
+nav .form-group .rows .form-control{
+    height: 40px;
+    box-shadow: none !important;
+    /* padding: 10px 10px 10px 20px !important; */
+
+}
+
+.nav-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px !important;
+}
