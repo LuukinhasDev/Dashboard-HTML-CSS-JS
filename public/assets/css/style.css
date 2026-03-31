@@ -1,31 +1,31 @@
-@font-face {
+@font-face{
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
 /* Tirando todas as bordas e espaçamento interior para evitar conflito com a formatação do bootstrap */
-* {
+*{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
 }
 
-body {
+body{
     width: 100%;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 /* Formatação da tag container-fluid para menu lateral direito e menu top */
-.container-fluid {
+.container-fluid{
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
 }
 
-header {
+header{
     width: 20%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(#12366fbb, #12366fbb), url("../images/6a1f7f2b0d2627742952fc64591d95f3.jpg");
     background-position: center;
     background-size: cover;
@@ -36,7 +36,7 @@ header {
     top: 0;
 }
 
-main {
+main{
     width: 80%;
     margin-left: 20% !important;
 }
@@ -85,12 +85,13 @@ nav .form-group .rows .form-control {
     border-radius: 4px !important;
     border: 1px solid #365d9ce0 !important;
 }
+
 nav .form-group .rows input::placeholder {
     color: #eee !important;
     font-size: 1rem;
 }
 
-nav .form-group .rows i{
+nav .form-group .rows i {
     position: absolute;
     top: 18px;
     left: 14px;
@@ -116,7 +117,7 @@ nav ul li {
     margin: 10px 0 !important;
 }
 
-nav ul li a{
+nav ul li a {
     display: flex;
     padding: 12px !important;
     text-decoration: none;
@@ -125,7 +126,7 @@ nav ul li a{
     border-radius: 4px;
 }
 
-nav ul li a i{
+nav ul li a i {
     margin-right: 6px !important;
 }
 
@@ -134,10 +135,12 @@ nav ul li a:hover {
     background-color: #eee !important;
     color: #000 !important;
 }
-nav ul li a.activer i{
+
+nav ul li a.activer i {
     color: #000;
 }
-nav ul li a:hover i{
+
+nav ul li a:hover i {
     color: #000 !important;
 }
 
@@ -147,15 +150,167 @@ nav ul li a:hover i{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* padding: 10px !important; */
+    padding: 10px !important;
 }
 
-.nav-top .bars{
+.nav-top .bars {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-top .bars .btn{
+.nav-top .bars .btns {
     background-color: #fff !important;
     padding: 10px 12px !important;
     margin: 10px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px !important;
+}
+
+.nav-top .bars .btns i {
+    font-size: 1rem;
+}
+
+.nav-top .bars p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 500px;
+}
+
+/* ==================== */
+
+.user-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-notification .users {
+    display: flex;
+    margin-right: 10px !important;
+    border: none;
+}
+
+.user-notification .users p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500px;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.user-notification .users i {
+    font-weight: bold;
+    color: #000;
+    margin-left: 8px !important;
+    font-size: 1rem;
+}
+
+.user-notification .notification {
+    border: none;
+    background-color: #365d9ce0;
+    padding: 10px !important;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user-notification .notification i {
+    font-size: 1rem;
+    color: #eeee;
+}
+
+.user-notification .notification span {
+    position: absolute;
+    top: 0 !important;
+    right: -10px;
+    background-color: red;
+    padding: 0px 10px !important;
+    border-radius: 10px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-size: 0.8rem;
+}
+
+.container-fluids {
+    width: 100%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    padding: 0 1rem !important;
+}
+
+.cards .cards-header {
+    width: 300px;
+    background-color: #00c0f0;
+    display: block;
+    border-radius: 4px;
+}
+
+.cards .cards-header .cards-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem !important;
+}
+
+.cards .cards-header .cards-top .card-number {
+    display: block;
+}
+
+.cards .cards-header .cards-top .card-number p {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #eee;
+}
+
+.cards .cards-header .cards-top .card-number p.value-total{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.cards .cards-header .cards-top .card-number p.days {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.cards .cards-header .cards-top .cards-icons {
+    background-color: #00c0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .cards-header .cards-top .cards-icons i {
+    font-size: 4rem;
+    color: #0000003b;
+    background-color: #00c0f0;
+}
+
+.cards .cards-header .cards-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01acda;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.cards .cards-header .cards-type p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cards .cards-header .cards-type .ticket {
+    font-size: 0.8rem;
+    padding: 4px !important;
+    color: #eee;
+    font-weight: 500;
 }
