@@ -68,19 +68,81 @@
             </div>
             <div class="container-fluids">
                 <div class="cards">
-                    <div class="cards-header">
+                    <div class="cards-header color1">
                         <div class="cards-top">
                             <div class="card-number">
                                 <p class="value-total">1.021,25</p>
                                 <p class="days">Vendas hoje</p>
                             </div>
-                            <div class="cards-icons">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cards-icons icons-color1">
+                                <i class="fa-solid fa-cart-shopping iconsColor1"></i>
                             </div>
                         </div>
-                        <div class="cards-type">
-                                <p class="ticket">Ticket Médio $255.31 - Ref. 4 vendas</p>
+                        <div class="cards-type typesColor1">
+                            <p class="ticket">Ticket Médio $255.31 - Ref. 4 vendas</p>
+                        </div>
+                    </div>
+                    <div class="cards-header color2">
+                        <div class="cards-top">
+                            <div class="card-number">
+                                <p class="value-total">1.021,25</p>
+                                <p class="days">Vendas hoje</p>
                             </div>
+                            <div class="cards-icons icons-color2">
+                                <i class="fa-solid fa-cart-shopping iconsColor2"></i>
+                            </div>
+                        </div>
+                        <div class="cards-type typesColor2">
+                            <p class="ticket">Ticket Médio $255.31 - Ref. 4 vendas</p>
+                        </div>
+                    </div>
+                    <div class="cards-header color3">
+                        <div class="cards-top">
+                            <div class="card-number">
+                                <p class="value-total">1.021,25</p>
+                                <p class="days">Vendas hoje</p>
+                            </div>
+                            <div class="cards-icons icons-color3">
+                                <i class="fa-solid fa-cart-shopping iconsColor3"></i>
+                            </div>
+                        </div>
+                        <div class="cards-type typesColor3">
+                            <p class="ticket">Ticket Médio $255.31 - Ref. 4 vendas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conteiners-fluid">
+                    <div class="rows-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lucas</td>
+                                    <td>120,00</td>
+                                    <td><button class="btn btn-sm alls rounded-0">Vendas</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Henrique</td>
+                                    <td>105,00</td>
+                                    <td><button class="btn btn-sm alls rounded-0">Vendas</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Nilson</td>
+                                    <td>97,00</td>
+                                    <td><button class="btn btn-sm alls rounded-0">Vendas</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="charts-produts">
+                        <canvas id="myChart" style="height: 300px; width: 400px; background-color: #eee;"></canvas>
                     </div>
                 </div>
             </div>
@@ -90,6 +152,30 @@
 
     <!-- JS Bootstap -->
     <script src="public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/js/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Bananas', 'Repolho', 'Maças', 'Laranjas', 'Folhas de Abobora', 'Couve'],
+                datasets: [{
+                    label: 'Produtos',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

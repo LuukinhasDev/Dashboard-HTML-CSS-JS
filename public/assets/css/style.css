@@ -1,29 +1,29 @@
-@font-face{
+@font-face {
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
 /* Tirando todas as bordas e espaçamento interior para evitar conflito com a formatação do bootstrap */
-*{
+* {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     background-color: #eee;
 }
 
 /* Formatação da tag container-fluid para menu lateral direito e menu top */
-.container-fluid{
+.container-fluid {
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
 }
 
-header{
+header {
     width: 20%;
     min-height: 100vh;
     background: linear-gradient(#12366fbb, #12366fbb), url("../images/6a1f7f2b0d2627742952fc64591d95f3.jpg");
@@ -36,7 +36,7 @@ header{
     top: 0;
 }
 
-main{
+main {
     width: 80%;
     margin-left: 20% !important;
 }
@@ -249,9 +249,10 @@ nav ul li a:hover i {
 
 .cards .cards-header {
     width: 300px;
-    background-color: #00c0f0;
     display: block;
     border-radius: 4px;
+    margin: 10px !important;
+    flex-wrap: wrap;
 }
 
 .cards .cards-header .cards-top {
@@ -270,7 +271,7 @@ nav ul li a:hover i {
     color: #eee;
 }
 
-.cards .cards-header .cards-top .card-number p.value-total{
+.cards .cards-header .cards-top .card-number p.value-total {
     font-size: 2.1rem;
     font-weight: 600;
 }
@@ -281,7 +282,6 @@ nav ul li a:hover i {
 }
 
 .cards .cards-header .cards-top .cards-icons {
-    background-color: #00c0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,7 +290,6 @@ nav ul li a:hover i {
 .cards .cards-header .cards-top .cards-icons i {
     font-size: 4rem;
     color: #0000003b;
-    background-color: #00c0f0;
 }
 
 .cards .cards-header .cards-type {
@@ -298,7 +297,6 @@ nav ul li a:hover i {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #01acda;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
@@ -313,4 +311,77 @@ nav ul li a:hover i {
     padding: 4px !important;
     color: #eee;
     font-weight: 500;
+}
+
+/* colors cards1 */
+.color1 {
+    background-color: #00c0f0;
+}
+
+icons-color1 {
+    background-color: #00c0f0;
+}
+
+.typesColor1 {
+    background-color: #01acda;
+}
+
+/* colors cards2 */
+.color2 {
+    background-color: #f39c10;
+}
+
+.iconsColor2 {
+    background-color: #f39c10;
+}
+
+.typesColor2 {
+    background-color: #d68b13;
+}
+
+/* colors cards3 */
+.color3 {
+    background-color: #00a65a;
+}
+
+.iconsColor3 {
+    background-color: #00a65a;
+}
+
+.typesColor3 {
+    background-color: #049553;
+}
+
+
+/* ================CHARTJS================ */
+
+.conteiners-fluid {
+    width: 100%;
+    padding: 1rem !important;
+    display: flex;
+}
+
+.conteiners-fluid .rows-responsive {
+    width: 300px;
+    padding: 0.8rem !important;
+    background-color: #fff;
+    margin-right: 10px !important;
+}
+
+.conteiners-fluid .rows-responsive .table tbody tr td {
+    padding: 6px 0 !important;
+}
+
+.conteiners-fluid .rows-responsive .table tbody tr td .btn-sm {
+    background-color: #049553;
+    padding: 2px 6px !important;
+    color: #eee;
+    font-size: 0.8rem;
+}
+
+.charts-produts {
+    width: 400px;
+    height: 300px;
+    margin: 0 10px !important;
+
 }
